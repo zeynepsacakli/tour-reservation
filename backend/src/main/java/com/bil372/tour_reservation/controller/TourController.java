@@ -80,4 +80,8 @@ public class TourController {
     public List<Tour> getToursByCity(@PathVariable String cityName) {
         return tourService.getToursByCity(cityName);
     }
+
+
+
+    
 }

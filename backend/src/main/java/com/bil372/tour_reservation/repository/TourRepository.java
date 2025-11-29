@@ -80,4 +80,7 @@ public interface TourRepository extends JpaRepository<Tour, Integer> {
         nativeQuery = true
     )
     Long countTotalPassengersByTour(@Param("tourId") Integer tourId);
+
+
+    
 }

@@ -93,4 +93,8 @@ public class ReservationService {
 
         return savedReservation;
     }
+    public List<Reservation> getReservationByUserId(Integer userId) {
+        return reservationRepository.findReservationByUserId(userId);
+    }
+
 }

@@ -30,4 +30,5 @@ public class DestinationController {
     public List<Destination> getDestinationsByCountry(@PathVariable("country") String country) {
         return destinationService.getDestinationsByCountry(country);
     }
+
 }

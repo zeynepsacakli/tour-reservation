@@ -41,3 +41,9 @@ public class ReservationController {
 
     
 }
+    @GetMapping("/user/{userId}/sorted")
+    public List<Reservation> getReservationByUserId(@PathVariable Integer userId) {
+        return reservationService.getReservationByUserId(userId);
+    }
+
+}

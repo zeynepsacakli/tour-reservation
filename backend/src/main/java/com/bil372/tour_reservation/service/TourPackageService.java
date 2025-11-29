@@ -135,3 +135,18 @@ public class TourPackageService {
         tourPackageRepository.save(tourPackage);
     }
 }
+
+    public List<TourPackage> getPackagesByStartDate(java.time.LocalDate startDate) {
+        return tourPackageRepository.findPackagesByStartDate(startDate);
+    }
+
+    public List<TourPackage> getPackagesByEndDate(java.time.LocalDate endDate) {
+        return tourPackageRepository.findPackagesByEndtDate(endDate);
+    }
+
+    public List<TourPackage> getPackagesByHotelRate(Integer stars) {
+        return tourPackageRepository.findPackagesByHotelRate(stars);
+    }
+
+
+}    
